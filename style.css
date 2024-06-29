@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    height: max-content;
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px auto;
+    width: max-content;
+    border-radius: 50%;
+}
+
+section {
+    background-color: lightblue;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#pay,
+#get {
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 30px;
+    /* margin: 0 100px; */
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-size: 22px;
+}
+
+input {
+    display: block;
+    border: none;
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    box-shadow: 4px 4px 20px silver;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+button:focus {
+    background-color: #000;
+    color: gold;
+}
+
+#res_get,
+#res_pay {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background-color: green;
+    margin: 20px;
+    color: #fff;
+    height: 60px;
+    border-radius: 8px;
+    direction: rtl;
+}
+
+
+/* Responsive  for Small Screen 0 ==> 350px ... */
+@media (max-width: 350px) {
+    .title {
+        font-size: 40px;
+        padding: 12px 0;
+        position: fixed;
+        left: 20%;
+        top: 0;
+    }
+    
+    section {
+        margin-top: 75px;
+        width: 100vw;
+        background-color: #fff;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    section>div {
+        box-shadow: 1px 2px 10px silver;
+        background-color: orange;
+        width: 290px;
+        padding: 15px 10px;
+        border-radius: 15px;
+    }
+
+    label {
+        display: block;
+        text-align: center;
+        margin: 5px;
+        font-size: 18px;
+    }
+
+    input {
+        display: block;
+        border: none;
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px 15px;
+        font-size: 20px;
+        box-shadow: 2px 2px 10px gray;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        height: 30px;
+        font-size: 19px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        box-shadow: 4px 4px 20px silver;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+    }
+
+    #res_get,
+    #res_pay {
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        background-color: #ddd;
+        margin: 20px;
+        color: #000;
+        height: 35px;
+        border-radius: 8px;
+        direction: rtl;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Responsive  for Small Screen 0 ==> 600px ... */
+@media (max-width: 770px) {
+    section {
+        background-color: lightblue;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
